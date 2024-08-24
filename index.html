@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js" defer></script>
+</head>
+<body>
+    <h1>Please select the difficulty level and category before start</h1>
+ 
+    <ul>
+        <li>
+            <label for="category-select">Select Category</label>
+            <select id="category-select">
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                <option value="category3">Category 3</option>
+            </select>
+        </li>
+        <li>
+            <label for="difficulty-select">Select Difficulty</label>
+            <select id="difficulty-select">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </li>
+     </ul> 
+       
+     <a href="plays.html?" class="play-button" id="start-button">Let's Play</a>
+     
+
+     <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            const category = document.getElementById('category-select').value;
+            const difficulty = document.getElementById('difficulty-select').value;
+            localStorage.setItem('selectedCategory', category);
+            localStorage.setItem('selectedDifficulty', difficulty);
+        });
+
+        
+    </script>
+</body>
+</html>

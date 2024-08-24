@@ -1,0 +1,5 @@
+1. kategorileri opentdpden sec ve benim drop downum valuelarla degistir'
+2.Zorluklari benim zorluklaral degistircecm 
+3.lets play buttonundaki href kaldir
+4.lets play butonunu jqueryle tikladigini dinle ve tiklaninca kategori zorlugu play.html göndeririken dinamik olarak url sonuna ekle qaryparameteresi olarak ekle
+5.play.js de queryparametlerelerini zorluk ve category seceneklerini cek ve bunlar ile opentdp get request yap ve karsiliginda json objesi doncek 
